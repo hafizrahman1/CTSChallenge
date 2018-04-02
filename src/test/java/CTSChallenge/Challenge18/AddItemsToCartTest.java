@@ -103,6 +103,21 @@ public class AddItemsToCartTest {
 		
 	}
 	
+	@Test
+	public void checkoutTest() {
+		// Click the secure Checkout
+		driver.findElement(By.xpath("//a[@title='Secure Checkout']")).click();
+		
+		// Click on the continue billing
+		driver.findElement(By.xpath("//a[@title='Icon button']")).click();
+		
+		// Grab the error message
+		String errorMessage = driver.findElement(By.xpath("//input[@id='SAddress1']")).getText();
+		// Check the validation message
+		assertThat(errorMessage, equalTo("This field is required."));
+		
+	}
+	
 	@AfterMethod
 	public void finalize() throws InterruptedException {
 		driver.quit();
