@@ -22,8 +22,6 @@ public class AddItemsToCartTest {
 	WebElement submitBtn;
 	WebElement registerBtn;
 	
-	boolean loggedIn;
-	
 	@BeforeTest
 	public void setUp() {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\mdrah\\Desktop\\Selenium Executables\\Drivers\\chromedriver_win32\\chromedriver.exe");

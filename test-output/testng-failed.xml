@@ -3,14 +3,14 @@
 <suite thread-count="-1" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="CTSChallenge.Challenge18.AddItemsToCartTest">
+      <class name="CTSChallenge.Challenge18.GmailLoginTest">
         <methods>
           <include name="setUp"/>
-          <include name="initialize"/>
+          <include name="loginTest"/>
           <include name="finalize"/>
-          <include name="addItemToCartTest" invocation-numbers="0 1 2"/>
+          <include name="initialize"/>
         </methods>
-      </class> <!-- CTSChallenge.Challenge18.AddItemsToCartTest -->
+      </class> <!-- CTSChallenge.Challenge18.GmailLoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
